@@ -22,9 +22,6 @@ The project was fully simulated, synthesized, implemented, and bitstream generat
 ├── Sobel_Edge_FPGA.xpr # Vivado project file
 └── README.md
 
-## 📸 Demo Screenshots
-(Add Vivado screenshots here: RTL schematic, Implemented Design, Bitstream success)
-
 ---
 
 ## 👤 Author
@@ -32,3 +29,4 @@ The project was fully simulated, synthesized, implemented, and bitstream generat
 Electronics & Telecommunication Engineer  
 📧 [bikashsahooclg09@gmail.com](mailto:bikashsahooclg09@gmail.com)  
 🔗 [linkedin.com/in/bikashsahoo09](https://linkedin.com/in/bikashsahoo09)
+

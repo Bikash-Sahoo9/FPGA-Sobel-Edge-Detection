@@ -1,7 +1,7 @@
 # Sobel Edge Detection on FPGA
 
 **Tool:** Xilinx Vivado 2025.1 ML Edition  
-**Device:** Artix-7 (xc7a35tftg256-1)  
+**Device:** Artix-7 (xc7a35tcpg236-1)  
 **Language:** Verilog HDL  
 
 ## 🎯 Project Overview
@@ -22,5 +22,6 @@ The project was fully simulated, synthesized, implemented, and bitstream generat
 Electronics & Telecommunication Engineer  
 📧 [bikashsahooclg09@gmail.com](mailto:bikashsahooclg09@gmail.com)  
 🔗 [linkedin.com/in/bikashsahoo09](https://linkedin.com/in/bikashsahoo09)
+
 
 

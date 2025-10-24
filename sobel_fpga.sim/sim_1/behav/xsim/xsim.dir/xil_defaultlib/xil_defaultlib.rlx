@@ -1,0 +1,10 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/bikas/sobel_fpga/sobel_fpga.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sim_1/new/tb_sobel.v,1761237525,verilog,,,,tb_sobel,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/line_buffer.v,1761236579,verilog,,C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/magnitude_thresh.v,,line_buffer,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/magnitude_thresh.v,1761237683,verilog,,C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_core.v,,magnitude_thresh,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_core.v,1761236577,verilog,,C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v,,sobel_core,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v,1761236882,verilog,,C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sim_1/new/tb_sobel.v,,sobel_top,,,../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

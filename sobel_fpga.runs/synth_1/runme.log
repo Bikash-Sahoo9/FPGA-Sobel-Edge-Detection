@@ -1,0 +1,299 @@
+
+*** Running vivado
+    with args -log sobel_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sobel_top.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Oct 24 01:40:16 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source sobel_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 496.941 ; gain = 209.254
+Command: read_checkpoint -auto_incremental -incremental C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/utils_1/imports/synth_1/sobel_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/utils_1/imports/synth_1/sobel_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top sobel_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18200
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1184.137 ; gain = 495.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sobel_top' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'line_buffer' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/line_buffer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'line_buffer' (0#1) [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/line_buffer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sobel_core' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_core.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_core' (0#1) [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'magnitude_thresh' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/magnitude_thresh.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'magnitude_thresh' (0#1) [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/magnitude_thresh.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_top' (0#1) [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v-23.0 with 1st driver pin 'lb/in_ready' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v-23.0 with 2nd driver pin 'VCC' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v-23.0 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/sobel_top.v:23]
+WARNING: [Synth 8-3917] design sobel_top has port in_ready driven by constant 1
+WARNING: [Synth 8-7129] Port p11[7] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[6] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[5] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[4] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[3] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[2] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[1] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port p11[0] in module sobel_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out_ready in module sobel_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1292.832 ; gain = 603.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1292.832 ; gain = 603.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1292.832 ; gain = 603.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1292.832 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/constrs_1/new/sobel_contraints.xdc]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/constrs_1/new/sobel_contraints.xdc:82]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/constrs_1/new/sobel_contraints.xdc:83]
+Finished Parsing XDC File [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/constrs_1/new/sobel_contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/constrs_1/new/sobel_contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sobel_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sobel_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1372.000 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1372.000 ; gain = 682.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1372.000 ; gain = 682.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1372.000 ; gain = 682.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1372.000 ; gain = 682.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   7 Input   16 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 5     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              128 Bit	(16 X 8 bit)          RAMs := 3     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design sobel_top has port in_ready driven by constant 1
+WARNING: [Synth 8-7129] Port out_ready in module sobel_top is either unconnected or has no load
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in_ready with 1st driver pin 'lb/in_ready_reg/Q' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/line_buffer.v:66]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin in_ready with 2nd driver pin 'VCC' [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/line_buffer.v:66]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net in_ready is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/bikas/sobel_fpga/sobel_fpga.srcs/sources_1/new/line_buffer.v:66]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1372.000 ; gain = 682.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------+-----------+----------------------+---------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------+-----------+----------------------+---------------+
+|sobel_top   | lb/row0_reg | Implied   | 16 x 8               | RAM32M x 4    | 
+|sobel_top   | lb/row1_reg | Implied   | 16 x 8               | RAM16X1D x 8  | 
+|sobel_top   | lb/row2_reg | Implied   | 16 x 8               | RAM32M x 4    | 
++------------+-------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1499.023 ; gain = 809.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1539.547 ; gain = 850.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------+-----------+----------------------+---------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------+-----------+----------------------+---------------+
+|sobel_top   | lb/row0_reg | Implied   | 16 x 8               | RAM32M x 4    | 
+|sobel_top   | lb/row1_reg | Implied   | 16 x 8               | RAM16X1D x 8  | 
+|sobel_top   | lb/row2_reg | Implied   | 16 x 8               | RAM32M x 4    | 
++------------+-------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1539.547 ; gain = 850.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    38|
+|3     |LUT1     |     6|
+|4     |LUT2     |   116|
+|5     |LUT3     |     9|
+|6     |LUT4     |    26|
+|7     |LUT5     |    72|
+|8     |LUT6     |    42|
+|9     |RAM16X1D |     8|
+|10    |RAM32M   |     8|
+|11    |FDRE     |    96|
+|12    |IBUF     |    11|
+|13    |OBUF     |    10|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1750.414 ; gain = 982.180
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1750.414 ; gain = 1061.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1750.414 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1750.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 8 instances
+
+Synth Design complete | Checksum: e74139e5
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 13 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1750.414 ; gain = 1247.453
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1750.414 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bikas/sobel_fpga/sobel_fpga.runs/synth_1/sobel_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file sobel_top_utilization_synth.rpt -pb sobel_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 24 01:41:12 2025...

@@ -15,13 +15,6 @@ The project was fully simulated, synthesized, implemented, and bitstream generat
 - Synthesis and implementation in Vivado  
 - Bitstream generation (`sobel_top.bit`)
 
-## 📂 Folder Structure
-├── src/ # Verilog design files
-├── sim/ # Testbench and simulation results
-├── sobel_top.bit # Generated bitstream file
-├── Sobel_Edge_FPGA.xpr # Vivado project file
-└── README.md
-
 ---
 
 ## 👤 Author
@@ -29,4 +22,5 @@ The project was fully simulated, synthesized, implemented, and bitstream generat
 Electronics & Telecommunication Engineer  
 📧 [bikashsahooclg09@gmail.com](mailto:bikashsahooclg09@gmail.com)  
 🔗 [linkedin.com/in/bikashsahoo09](https://linkedin.com/in/bikashsahoo09)
+
 
